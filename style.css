@@ -1,0 +1,75 @@
+:root {
+    --title-lg-size: 56px;
+    --title-md-size: 24px;
+    --title-sm-size: 16px;
+    --line-height: 1.2;
+}
+
+.font-asap {
+    font-family: 'Asap', sans-serif;
+}
+
+.title-lg {
+    font-size: var(--title-lg-size);
+    line-height: var(--line-height);
+    font-weight: bold;
+}
+
+.title-md {
+    font-size: var(--title-md-size);
+    line-height: var(--line-height);
+    font-weight: bold;
+}
+
+.title-sm {
+    font-size: var(--title-sm-size);
+    line-height: var(--line-height);
+    font-weight: bold;
+}
+
+/* Configurações gerais da fonte Inconsolata */
+.font-inconsolata {
+    font-family: "Inconsolata", monospace;
+    line-height: 120%;
+}
+
+/* Estilo para o Subtitle */
+.subtitle {
+    font-size: 20px;
+    font-weight: 400;
+    /* Regular */
+}
+
+/* Estilo para o Tag Md */
+.tag-md {
+    font-size: 16px;
+    font-weight: 700;
+    /* Bold */
+}
+
+/* Estilo para o Tag Sm */
+.tag-sm {
+    font-size: 12px;
+    font-weight: 700;
+    /* Bold */
+}
+
+/* Configurações gerais da fonte Maven Pro */
+.font-maven-pro {
+    font-family: "Maven Pro", sans-serif;
+    line-height: 140%;
+}
+
+/* Estilo para o Text Md */
+.text-md {
+    font-size: 16px;
+    font-weight: 400;
+    /* Regular */
+}
+
+/* Estilo para o Text Sm */
+.text-sm {
+    font-size: 14px;
+    font-weight: 400;
+    /* Regular */
+}
