@@ -79,13 +79,13 @@ $projetos = [
         <h3 class="title-md text-white">Veja os projetos em destaque</h3>
         <span class="w-2/3 grid grid-cols-2 gap-4 mt-10">
             <?php foreach ($projetos as $projeto):  ?>
-                <div class="bg-[#292C34] rounded-lg p-3 flex">
+                <div class="bg-[#292C34] rounded-lg p-3 flex hover:border-2 border-white">
                     <img class="w-auto h-auto" src="<?= $projeto["imagem"] ?>" alt="<?= $projeto["alt"] ?>">
                     <div class="ml-5">
                         <h3 class="text-white text-2xl font-bold font-asap title-sm"><?= $projeto["titulo"] ?></h3>
                         <p class="mx-auto text-white font-maven-pro text-sm mt-4 text-sm"><?= $projeto["descricao"] ?></p>
-                        <span class="mt-10 flex ">
-                            <?php imprimeTecnologias($projeto["stacks"]); ?>
+                        <span class="mt-10 flex">
+                            <?php imprimeTecnologias($projeto["stacks"], false); ?>
                         </span>
         </span>
     </div>

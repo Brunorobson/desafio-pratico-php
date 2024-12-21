@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="https://cdn.tailwindcss.com"></script>
     <title>Desafio Prático - Portfólio Dev [PHP]</title>
+    <script src="https://unpkg.com/@phosphor-icons/web"></script>
     <link rel="stylesheet" href="style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -27,7 +28,7 @@
         "HTML",
         "Javascript"
     ];
-    function imprimeTecnologias($stacks)
+    function imprimeTecnologias($stacks, $incard = false)
     {
         foreach ($stacks as $stack) {
             if ($stack == "GitHub") {
@@ -43,7 +44,13 @@
             } else {
                 $colorbg = "bg-gray-400 text-gray-900";
             }
-            echo "<span class=\"$colorbg rounded-full items-center mr-2 px-2 py-1 font-semibold text-xs \"> $stack</span>";
+
+            if ($incard) {
+                $text = "text-md";
+            } else {
+                $text = "text-sm";
+            }
+            echo "<span class=\"$colorbg rounded-full justify-items-center mr-2 px-2 py-1 font-semibold $text \"> $stack</span>";
         }
     }
     ?>

@@ -4,6 +4,6 @@
     <h1 class="text-white text-6xl mt-4 text-bold font-asap title-lg">Desenvolvedor PHP</h1>
     <p class="text-white font-maven-pro text-sm mt-4 text-sm w-1/2 text-center">Transformo necessidades em aplicações reais, evolventes e funcionais. Desenvolvo sistemas através da minha paixão pela tecnologia, contribuindo com soluções inovadoras e eficazes para desafios complexos.</p>
     <span class="mt-20">
-        <?php imprimeTecnologias($tecnologias); ?>
+        <?php imprimeTecnologias($tecnologias, true); ?>
     </span>
 </div>
